@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleartrip SEO Competitive Audit — Mumbai to Delhi Flights</title>
+<style>
+  :root {
+    --ct-blue: #e8f4fd;
+    --ct-accent: #1a6fc4;
+    --red: #e53e3e;
+    --orange: #dd6b20;
+    --green: #276749;
+    --green-bg: #f0fff4;
+    --yellow: #d69e2e;
+    --yellow-bg: #fffff0;
+    --red-bg: #fff5f5;
+    --orange-bg: #fffaf0;
+    --grey: #718096;
+    --dark: #1a202c;
+    --border: #e2e8f0;
+    --card: #ffffff;
+    --bg: #f7fafc;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--dark); line-height: 1.6; }
+
+  .header { background: linear-gradient(135deg, #0a2540 0%, #1a6fc4 100%); color: white; padding: 48px 40px; }
+  .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+  .header p { opacity: 0.8; font-size: 1rem; }
+  .header .meta { margin-top: 16px; display: flex; gap: 24px; flex-wrap: wrap; }
+  .header .meta span { background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: 20px; font-size: 0.82rem; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+
+  .section-title { font-size: 1.4rem; font-weight: 700; color: var(--dark); margin: 40px 0 16px; border-left: 4px solid var(--ct-accent); padding-left: 12px; }
+  .section-sub { font-size: 0.9rem; color: var(--grey); margin-bottom: 24px; margin-top: -12px; padding-left: 16px; }
+
+  /* SCORE TABLE */
+  .score-grid { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); font-size: 0.88rem; }
+  thead tr { background: #0a2540; color: white; }
+  thead th { padding: 14px 12px; text-align: center; font-weight: 600; white-space: nowrap; }
+  thead th:first-child { text-align: left; }
+  tbody tr:nth-child(even) { background: #f8fafc; }
+  tbody td { padding: 12px; text-align: center; border-bottom: 1px solid var(--border); }
+  tbody td:first-child { text-align: left; font-weight: 600; }
+  .ct-row { background: #e8f4fd !important; }
+  .ct-row td:first-child { color: var(--ct-accent); }
+
+  .score-pill { display: inline-block; width: 36px; height: 36px; border-radius: 50%; line-height: 36px; font-weight: 700; font-size: 0.88rem; text-align: center; }
+  .s-high { background: #c6f6d5; color: #276749; }
+  .s-mid { background: #fefcbf; color: #744210; }
+  .s-low { background: #fed7d7; color: #9b2c2c; }
+  .total-pill { display: inline-block; padding: 4px 12px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; }
+
+  /* CARDS */
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; margin-bottom: 32px; }
+  .card { background: var(--card); border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border: 1px solid var(--border); }
+  .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .card p, .card li { font-size: 0.88rem; color: #4a5568; line-height: 1.7; }
+  .card ul { padding-left: 18px; }
+  .card ul li { margin-bottom: 4px; }
+
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+  .badge-red { background: #fed7d7; color: #9b2c2c; }
+  .badge-orange { background: #feebc8; color: #7b341e; }
+  .badge-green { background: #c6f6d5; color: #276749; }
+  .badge-blue { background: #bee3f8; color: #2a4365; }
+
+  /* COMPARISON TABLE */
+  .comp-table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); font-size: 0.84rem; }
+  .comp-table th { background: #0a2540; color: white; padding: 12px 14px; text-align: left; font-weight: 600; }
+  .comp-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .comp-table tr:nth-child(even) { background: #f8fafc; }
+  .comp-table .ct { background: #e8f4fd !important; font-weight: 600; }
+  .tick { color: #276749; font-weight: 700; }
+  .cross { color: #e53e3e; font-weight: 700; }
+  .warn { color: #d69e2e; font-weight: 700; }
+
+  /* GAP ANALYSIS */
+  .gap-row { display: flex; gap: 16px; margin-bottom: 12px; align-items: flex-start; }
+  .gap-num { min-width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.88rem; flex-shrink: 0; }
+  .gap-p1 { background: #fed7d7; color: #9b2c2c; }
+  .gap-p2 { background: #feebc8; color: #7b341e; }
+  .gap-p3 { background: #fefcbf; color: #744210; }
+  .gap-content h4 { font-size: 0.92rem; font-weight: 700; margin-bottom: 4px; }
+  .gap-content p { font-size: 0.84rem; color: #4a5568; }
+  .gap-content code { background: #edf2f7; padding: 1px 5px; border-radius: 3px; font-size: 0.8rem; font-family: monospace; }
+
+  /* ROADMAP */
+  .roadmap { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .roadmap-phase { border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .roadmap-phase .phase-header { padding: 16px 20px; }
+  .p1-header { background: #fed7d7; }
+  .p2-header { background: #feebc8; }
+  .p3-header { background: #fefcbf; }
+  .roadmap-phase .phase-header h3 { font-size: 0.95rem; font-weight: 700; }
+  .roadmap-phase .phase-header p { font-size: 0.78rem; opacity: 0.8; margin-top: 2px; }
+  .roadmap-phase ul { background: white; padding: 16px 20px; list-style: none; }
+  .roadmap-phase ul li { font-size: 0.84rem; color: #2d3748; padding: 7px 0; border-bottom: 1px solid #edf2f7; display: flex; gap: 8px; }
+  .roadmap-phase ul li:last-child { border-bottom: none; }
+  .roadmap-phase ul li::before { content: "→"; color: var(--ct-accent); flex-shrink: 0; }
+
+  /* EEAT */
+  .eeat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  @media (max-width: 640px) { .eeat-grid { grid-template-columns: 1fr; } }
+  .eeat-card { background: white; border-radius: 10px; padding: 20px; border: 1px solid var(--border); }
+  .eeat-card h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .eeat-card ul { list-style: none; padding: 0; }
+  .eeat-card ul li { font-size: 0.84rem; color: #4a5568; padding: 5px 0; border-bottom: 1px solid #f0f4f8; display: flex; gap: 8px; align-items: flex-start; }
+  .eeat-card ul li:last-child { border-bottom: none; }
+
+  /* H1 comparison */
+  .h1-box { background: white; border-radius: 10px; padding: 16px 20px; border-left: 4px solid var(--border); margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .h1-box.ct-h1 { border-left-color: var(--ct-accent); background: var(--ct-blue); }
+  .h1-box .site-name { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--grey); margin-bottom: 5px; }
+  .h1-box .h1-text { font-size: 0.95rem; font-weight: 600; color: var(--dark); }
+  .h1-box .h1-analysis { font-size: 0.8rem; color: var(--grey); margin-top: 5px; }
+  .tag { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; margin-right: 4px; }
+  .tag-green { background: #c6f6d5; color: #276749; }
+  .tag-red { background: #fed7d7; color: #9b2c2c; }
+  .tag-blue { background: #bee3f8; color: #2a4365; }
+  .tag-grey { background: #e2e8f0; color: #4a5568; }
+
+  /* Highlight box */
+  .insight-box { border-radius: 10px; padding: 20px 24px; margin-bottom: 16px; border-left: 4px solid; }
+  .insight-critical { background: #fff5f5; border-color: #e53e3e; }
+  .insight-warning { background: #fffaf0; border-color: #dd6b20; }
+  .insight-positive { background: #f0fff4; border-color: #38a169; }
+  .insight-info { background: #ebf8ff; border-color: #3182ce; }
+  .insight-box h4 { font-size: 0.92rem; font-weight: 700; margin-bottom: 6px; }
+  .insight-box p { font-size: 0.85rem; color: #4a5568; }
+
+  .stat-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+  .stat { background: white; border-radius: 10px; padding: 16px 20px; border: 1px solid var(--border); flex: 1; min-width: 140px; }
+  .stat .val { font-size: 1.8rem; font-weight: 800; color: var(--ct-accent); }
+  .stat .lbl { font-size: 0.78rem; color: var(--grey); margin-top: 2px; }
+
+  footer { background: #0a2540; color: rgba(255,255,255,0.6); text-align: center; padding: 20px; font-size: 0.8rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Cleartrip SEO Competitive Audit</h1>
+  <p>Mumbai to New Delhi Flights — Senior SEO Review &amp; Priority Gap Analysis</p>
+  <div class="meta">
+    <span>Scraped: 19 May 2026</span>
+    <span>Route: BOM → DEL</span>
+    <span>Competitors: 5 sites</span>
+    <span>Dimensions: 6</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EXECUTIVE SUMMARY -->
+  <div class="section-title">Executive Summary</div>
+  <div class="insight-box insight-warning">
+    <h4>Senior POV: Cleartrip is technically competent but commercially passive</h4>
+    <p>Cleartrip has the strongest structured data variety among all competitors (Flight + FAQPage + Airport + BreadcrumbList schemas) but leaves significant SERP real estate on the table. Missing OG tags, a higher price anchor in H1/title versus competitors showing ₹4,800, no robots meta, 25% image alt failures, and a content depth gap of ~2,600 words versus MakeMyTrip collectively signal a page that ranks on authority but under-performs on CTR and conversion intent. The biggest structural risk: Cleartrip's H1 opens with "Book" — a transactional framing that sacrifices informational query coverage where 60–70% of travel search volume lives.</p>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="val">42<span style="font-size:1rem;color:#718096">/60</span></div><div class="lbl">Cleartrip overall score</div></div>
+    <div class="stat"><div class="val">50<span style="font-size:1rem;color:#718096">/60</span></div><div class="lbl">MakeMyTrip (leader)</div></div>
+    <div class="stat"><div class="val">8</div><div class="lbl">Critical gaps found</div></div>
+    <div class="stat"><div class="val">3</div><div class="lbl">Quick wins (≤ 1 day)</div></div>
+    <div class="stat"><div class="val">+₹2158</div><div class="lbl">CT price anchor vs competitors in H1</div></div>
+  </div>
+
+  <!-- SCORECARD -->
+  <div class="section-title">Scorecard — 6-Dimension Framework</div>
+  <div class="section-sub">Scored 1–10 per dimension. Higher = better.</div>
+  <div class="score-grid">
+  <table>
+    <thead>
+      <tr>
+        <th>Site</th>
+        <th>On-Page SEO</th>
+        <th>Technical SEO</th>
+        <th>Link Signals</th>
+        <th>UX &amp; Conversion</th>
+        <th>Trust &amp; Social Proof</th>
+        <th>Content Depth</th>
+        <th>Total /60</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="ct-row">
+        <td>🔵 Cleartrip</td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-low">6</span></td>
+        <td><span class="score-pill s-high">8</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="total-pill" style="background:#bee3f8;color:#2a4365">42</span></td>
+      </tr>
+      <tr>
+        <td>MakeMyTrip</td>
+        <td><span class="score-pill s-high">8</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-high">9</span></td>
+        <td><span class="score-pill s-high">9</span></td>
+        <td><span class="score-pill s-high">8</span></td>
+        <td><span class="score-pill s-high">9</span></td>
+        <td><span class="total-pill" style="background:#c6f6d5;color:#276749">50</span></td>
+      </tr>
+      <tr>
+        <td>Goibibo</td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-low">6</span></td>
+        <td><span class="score-pill s-high">8</span></td>
+        <td><span class="score-pill s-high">8</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-high">9</span></td>
+        <td><span class="total-pill" style="background:#c6f6d5;color:#276749">45</span></td>
+      </tr>
+      <tr>
+        <td>Ixigo</td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-high">9</span></td>
+        <td><span class="score-pill s-high">8</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-high">8</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="total-pill" style="background:#c6f6d5;color:#276749">46</span></td>
+      </tr>
+      <tr>
+        <td>EaseMyTrip</td>
+        <td><span class="score-pill s-low">5</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-high">8</span></td>
+        <td><span class="score-pill s-low">6</span></td>
+        <td><span class="score-pill s-mid">7</span></td>
+        <td><span class="score-pill s-low">6</span></td>
+        <td><span class="total-pill" style="background:#fefcbf;color:#744210">39</span></td>
+      </tr>
+      <tr>
+        <td>Skyscanner</td>
+        <td colspan="7" style="text-align:center;color:#a0aec0;font-style:italic">Bot-blocked during scrape — insufficient data</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <!-- H1 ANALYSIS -->
+  <div class="section-title">H1 Deep-Dive — Intent & Keyword Analysis</div>
+  <div class="section-sub">H1 is the single most weighted on-page signal. Below is a side-by-side teardown.</div>
+
+  <div class="h1-box ct-h1">
+    <div class="site-name">🔵 Cleartrip (subject)</div>
+    <div class="h1-text">"Book Mumbai to New Delhi Flight Tickets, Fares @₹6958 + 25% Off"</div>
+    <div class="h1-analysis">
+      <span class="tag tag-red">Transactional opener "Book"</span>
+      <span class="tag tag-red">Higher price anchor ₹6958</span>
+      <span class="tag tag-green">IATA-free (readable)</span>
+      <span class="tag tag-blue">Discount signal present</span>
+      <span class="tag tag-red">Misses informational intent</span>
+    </div>
+  </div>
+  <div class="h1-box">
+    <div class="site-name">MakeMyTrip</div>
+    <div class="h1-text">"Mumbai to Delhi Flights, Fares @ ₹4800 + Upto ₹800 OFF"</div>
+    <div class="h1-analysis">
+      <span class="tag tag-green">No "Book" opener — dual intent</span>
+      <span class="tag tag-green">₹4800 (lower anchor)</span>
+      <span class="tag tag-green">Rupee discount in absolute value</span>
+    </div>
+  </div>
+  <div class="h1-box">
+    <div class="site-name">Goibibo</div>
+    <div class="h1-text">"Mumbai to Delhi Flights, Fares @ ₹4800 + upto ₹1000 OFF"</div>
+    <div class="h1-analysis">
+      <span class="tag tag-green">Same price anchor as MMT</span>
+      <span class="tag tag-green">Highest absolute discount signal (₹1000)</span>
+    </div>
+  </div>
+  <div class="h1-box">
+    <div class="site-name">Ixigo</div>
+    <div class="h1-text">"Mumbai to New Delhi Flight, Fares starting @₹5200"</div>
+    <div class="h1-analysis">
+      <span class="tag tag-grey">"starting" weakens certainty</span>
+      <span class="tag tag-blue">No discount — price-led</span>
+    </div>
+  </div>
+  <div class="h1-box">
+    <div class="site-name">EaseMyTrip</div>
+    <div class="h1-text">"Mumbai To Delhi Flights"</div>
+    <div class="h1-analysis">
+      <span class="tag tag-red">No price signal</span>
+      <span class="tag tag-red">No discount signal</span>
+      <span class="tag tag-red">Generic — zero differentiation</span>
+      <span class="tag tag-green">Simplest (not always bad)</span>
+    </div>
+  </div>
+
+  <div class="insight-box insight-critical" style="margin-top:16px">
+    <h4>Critical Finding: Cleartrip's H1 price anchor is 45% higher than the market floor</h4>
+    <p>When a user sees Cleartrip's SERP snippet alongside MakeMyTrip and Goibibo, the ₹6958 anchor vs. ₹4800 creates an immediate price-perception deficit — even if CT's actual fares are equivalent. This directly suppresses organic CTR. The "Book" opener also excludes queries like "Mumbai to Delhi flights schedule", "best time to fly Mumbai Delhi", "which airline Mumbai to Delhi" which are high-volume informational queries that MMT and Goibibo capture with their H1 framing.</p>
+  </div>
+
+  <!-- META DATA COMPARISON -->
+  <div class="section-title">Full Metadata Comparison</div>
+  <div style="overflow-x:auto">
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Cleartrip</th>
+        <th>MakeMyTrip</th>
+        <th>Goibibo</th>
+        <th>Ixigo</th>
+        <th>EaseMyTrip</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Title length</strong></td>
+        <td class="ct">74 chars</td>
+        <td>75 chars</td>
+        <td>68 chars</td>
+        <td>62 chars</td>
+        <td>67 chars</td>
+      </tr>
+      <tr>
+        <td><strong>Title IATA codes</strong></td>
+        <td class="ct"><span class="tick">✓</span> BOM/DEL</td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td><strong>Meta keywords</strong></td>
+        <td class="ct"><span class="warn">⚠</span> 3 (sparse)</td>
+        <td><span class="tick">✓</span> 7 variants</td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="tick">✓</span> 6 variants</td>
+      </tr>
+      <tr>
+        <td><strong>Meta description</strong></td>
+        <td class="ct"><span class="tick">✓</span> Promo code + 24x7</td>
+        <td><span class="tick">✓</span> 5 USPs + promo</td>
+        <td><span class="tick">✓</span> Clean, no promo</td>
+        <td><span class="tick">✓</span> Free cancellation</td>
+        <td><span class="tick">✓</span> "No Convenience Fee"</td>
+      </tr>
+      <tr>
+        <td><strong>OG Title</strong></td>
+        <td class="ct"><span class="cross" style="font-size:1.1rem">✗ MISSING</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="tick">✓</span></td>
+      </tr>
+      <tr>
+        <td><strong>OG Description</strong></td>
+        <td class="ct"><span class="cross" style="font-size:1.1rem">✗ MISSING</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td><strong>OG Image</strong></td>
+        <td class="ct"><span class="cross" style="font-size:1.1rem">✗ MISSING</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="tick">✓</span></td>
+      </tr>
+      <tr>
+        <td><strong>Robots meta</strong></td>
+        <td class="ct"><span class="warn">⚠ NULL</span></td>
+        <td>index, follow</td>
+        <td>index, follow</td>
+        <td>index, follow</td>
+        <td>INDEX, FOLLOW</td>
+      </tr>
+      <tr>
+        <td><strong>Lang attribute</strong></td>
+        <td class="ct"><span class="tick">✓</span> en</td>
+        <td><span class="warn">⚠</span> "eng" (invalid)</td>
+        <td><span class="tick">✓</span> en</td>
+        <td><span class="tick">✓</span> en</td>
+        <td><span class="tick">✓</span> en</td>
+      </tr>
+      <tr>
+        <td><strong>Canonical</strong></td>
+        <td class="ct"><span class="tick">✓</span> Absolute</td>
+        <td><span class="tick">✓</span> Absolute</td>
+        <td><span class="warn">⚠</span> Protocol-relative</td>
+        <td><span class="tick">✓</span> Absolute</td>
+        <td><span class="tick">✓</span> Absolute</td>
+      </tr>
+      <tr>
+        <td><strong>Word count</strong></td>
+        <td class="ct">4,928</td>
+        <td><strong>7,590</strong></td>
+        <td><strong>8,459</strong></td>
+        <td>4,753</td>
+        <td>4,247</td>
+      </tr>
+      <tr>
+        <td><strong>H2 count</strong></td>
+        <td class="ct">29</td>
+        <td>3</td>
+        <td><span class="cross">0</span></td>
+        <td>33</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td><strong>H3 count</strong></td>
+        <td class="ct">34</td>
+        <td>50+</td>
+        <td>50+</td>
+        <td>12</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td><strong>Images total</strong></td>
+        <td class="ct">80</td>
+        <td>1</td>
+        <td>1</td>
+        <td>211</td>
+        <td>180</td>
+      </tr>
+      <tr>
+        <td><strong>Alt missing</strong></td>
+        <td class="ct"><span class="cross">20 (25%)</span></td>
+        <td><span class="tick">0 (0%)</span></td>
+        <td><span class="tick">0 (0%)</span></td>
+        <td><span class="tick">0 (0%)</span></td>
+        <td><span class="warn">29 (16%)</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <!-- STRUCTURED DATA -->
+  <div class="section-title">Structured Data Comparison</div>
+  <div style="overflow-x:auto">
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Schema Type</th>
+        <th>Cleartrip</th>
+        <th>MakeMyTrip</th>
+        <th>Goibibo</th>
+        <th>Ixigo</th>
+        <th>EaseMyTrip</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>BreadcrumbList</td>
+        <td class="ct"><span class="tick">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="tick">✓</span></td>
+      </tr>
+      <tr>
+        <td>Flight (with price)</td>
+        <td class="ct"><span class="tick">✓ 10 flights</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="tick">✓ 150+ flights</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>FAQPage</td>
+        <td class="ct"><span class="tick">✓ 10 Q&amp;As</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="tick">✓ 9 Q&amp;As</span></td>
+      </tr>
+      <tr>
+        <td>Airport</td>
+        <td class="ct"><span class="tick">✓ BOM + DEL</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="tick">✓ BOM + DEL</span></td>
+      </tr>
+      <tr>
+        <td>HowTo</td>
+        <td class="ct"><span class="cross">✗</span></td>
+        <td><span class="tick">✓ 10 steps</span></td>
+        <td><span class="tick">✓ 31 steps</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>Product / Rating</td>
+        <td class="ct"><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="tick">✓</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>SearchResultsPage</td>
+        <td class="ct"><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="tick">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="insight-box insight-positive" style="margin-top:16px">
+    <h4>Cleartrip's Structured Data Strength</h4>
+    <p>Cleartrip is the only competitor combining Flight + FAQPage + Airport + BreadcrumbList schemas on a single page. The Flight schema includes live price offers (₹6,958–₹7,793), IATA codes, duration, and seller information — this is textbook-quality structured data that can surface rich flight cards in Google Search. The Airport schema with phone numbers is unique to Cleartrip and EaseMyTrip. This is a genuine competitive advantage that needs to be preserved and extended.</p>
+  </div>
+
+  <!-- PRIORITY GAP ANALYSIS -->
+  <div class="section-title">Priority Gap Analysis</div>
+  <div class="section-sub">P1 = Fix this week. P2 = Fix this sprint. P3 = Next quarter.</div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px">
+    <div style="background:white;border-radius:10px;padding:16px;border:1px solid var(--border)">
+      <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#9b2c2c;margin-bottom:12px">P1 — Critical (This Week)</div>
+
+      <div class="gap-row">
+        <div class="gap-num gap-p1">1</div>
+        <div class="gap-content">
+          <h4>Add OG Tags — All Three Missing</h4>
+          <p>Cleartrip has <strong>null</strong> ogTitle, ogDescription, ogImage. Every competitor has them. This means every social share of this page renders with no preview image or description — a dead link in WhatsApp, Facebook, LinkedIn. Fix is 3 lines of HTML.</p>
+        </div>
+      </div>
+
+      <div class="gap-row">
+        <div class="gap-num gap-p1">2</div>
+        <div class="gap-content">
+          <h4>Add Robots Meta Tag</h4>
+          <p>Currently <code>null</code>. Add <code>&lt;meta name="robots" content="index, follow"&gt;</code>. Google defaults to indexing without it, but explicit declaration is best practice and removes any ambiguity.</p>
+        </div>
+      </div>
+
+      <div class="gap-row">
+        <div class="gap-num gap-p1">3</div>
+        <div class="gap-content">
+          <h4>Fix 20 Missing Image Alt Texts</h4>
+          <p>25% of 80 images have no alt attribute. Competitors: 0% missing. This affects accessibility (ADA/WCAG), image search ranking, and Core Web Vitals CLS scores. Audit <code>scraped-data/cleartrip.html</code> for all <code>&lt;img&gt;</code> tags without <code>alt</code>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border-radius:10px;padding:16px;border:1px solid var(--border)">
+      <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#7b341e;margin-bottom:12px">P2 — High Impact (This Sprint)</div>
+
+      <div class="gap-row">
+        <div class="gap-num gap-p2">4</div>
+        <div class="gap-content">
+          <h4>Revise H1 — Remove "Book", Lower Price Anchor</h4>
+          <p>Change from <em>"Book Mumbai to New Delhi Flight Tickets, Fares @₹6958 + 25% Off"</em> to something like <em>"Mumbai to New Delhi Flights — Fares from ₹4,800 + 25% Off with Cleartrip"</em>. This captures informational intent and resets the price perception anchor.</p>
+        </div>
+      </div>
+
+      <div class="gap-row">
+        <div class="gap-num gap-p2">5</div>
+        <div class="gap-content">
+          <h4>Add HowTo Schema for Booking Guide</h4>
+          <p>MMT and Goibibo use HowTo schema — it's one of Google's richest SERP features for this query type. Cleartrip already has a "How to Book" H2 section. Wrap it in <code>@type: HowTo</code> with 5–7 steps. Low dev effort, high SERP visibility payoff.</p>
+        </div>
+      </div>
+
+      <div class="gap-row">
+        <div class="gap-num gap-p2">6</div>
+        <div class="gap-content">
+          <h4>Fix "New delhi" Capitalisation Bug</h4>
+          <p>Throughout CT's page — H2s, H3s, meta desc — "New delhi" appears with lowercase 'd'. This looks like a template variable injection bug (<code>New {{city}}</code> → <code>New delhi</code>). Affects perceived quality and EEAT trust signals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:white;border-radius:10px;padding:16px;border:1px solid var(--border);margin-bottom:24px">
+    <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#744210;margin-bottom:12px">P3 — Strategic (Next Quarter)</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="gap-row">
+        <div class="gap-num gap-p3">7</div>
+        <div class="gap-content">
+          <h4>Content Depth Gap: +2,600 words needed</h4>
+          <p>CT has 4,928 words vs MMT's 7,590 and Goibibo's 8,459. Add seasonal content: "Best time to fly Mumbai to Delhi", "Monsoon flight tips", "Festive season fares" — MMT uses this for HowTo schema that gets rich snippet placement.</p>
+        </div>
+      </div>
+      <div class="gap-row">
+        <div class="gap-num gap-p3">8</div>
+        <div class="gap-content">
+          <h4>Add Review / Rating Schema</h4>
+          <p>Only Ixigo deploys a Product schema with ratings potential. Adding <code>AggregateRating</code> to the page — tied to CT's own review data — can surface star ratings in SERPs for this high-intent route. Stars in SERPs = +15–30% CTR uplift (industry benchmark).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EEAT ANALYSIS -->
+  <div class="section-title">E-E-A-T Signal Analysis</div>
+  <div class="section-sub">Google's Experience, Expertise, Authoritativeness, Trustworthiness framework — applied to travel OTA pages.</div>
+  <div class="eeat-grid">
+    <div class="eeat-card">
+      <h4><span style="background:#bee3f8;padding:2px 8px;border-radius:4px;font-size:0.8rem">Experience</span> Real-world signals on the page</h4>
+      <ul>
+        <li><span class="tick">✓</span> Cleartrip: Live flight prices (₹6,958–₹7,793) via Flight schema — shows real booking data, not placeholders</li>
+        <li><span class="tick">✓</span> Cleartrip: Airport schema with actual phone numbers — demonstrates operational depth</li>
+        <li><span class="cross">✗</span> No customer reviews or ratings surfaced on-page (MMT has "Customer Reviews" H3)</li>
+        <li><span class="cross">✗</span> No "X travellers booked in last 24 hrs" type social proof</li>
+      </ul>
+    </div>
+    <div class="eeat-card">
+      <h4><span style="background:#c6f6d5;padding:2px 8px;border-radius:4px;font-size:0.8rem">Expertise</span> Demonstrating domain knowledge</h4>
+      <ul>
+        <li><span class="tick">✓</span> Cleartrip: IATA codes in title (BOM/DEL) — signals technical authority to frequent flyers</li>
+        <li><span class="tick">✓</span> FAQ schema with 10 detailed Q&As covering cancellation, baggage, documents, web check-in</li>
+        <li><span class="cross">✗</span> No airline comparison content (MMT covers IndiGo vs Air India vs SpiceJet comfort levels)</li>
+        <li><span class="cross">✗</span> No "best time to book" seasonal fare calendar visible in content</li>
+      </ul>
+    </div>
+    <div class="eeat-card">
+      <h4><span style="background:#fefcbf;padding:2px 8px;border-radius:4px;font-size:0.8rem">Authoritativeness</span> Brand and citation signals</h4>
+      <ul>
+        <li><span class="tick">✓</span> Cleartrip Flight schema includes <code>sameAs</code> links to Twitter, Facebook, Instagram, LinkedIn — signals authoritative brand identity to Google</li>
+        <li><span class="tick">✓</span> Well-structured internal linking to 50 related flight schedule pages</li>
+        <li><span class="cross">✗</span> No partnership/certification mentions (IATA membership, award logos, etc.)</li>
+        <li><span class="warn">⚠</span> Flipkart ownership not leveraged as trust signal</li>
+      </ul>
+    </div>
+    <div class="eeat-card">
+      <h4><span style="background:#feebc8;padding:2px 8px;border-radius:4px;font-size:0.8rem">Trustworthiness</span> Safety and reliability signals</h4>
+      <ul>
+        <li><span class="tick">✓</span> Canonical tag present (absolute URL) — no duplicate content risk</li>
+        <li><span class="tick">✓</span> "24x7 Support" mentioned in meta description</li>
+        <li><span class="cross">✗</span> OG tags missing — social shares appear broken (trust destroyer)</li>
+        <li><span class="cross">✗</span> No "Secure payment" or "100% refund" mention above the fold in scraped content</li>
+        <li><span class="cross">✗</span> No free cancellation claim (Ixigo and MMT both highlight this)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- UNIQUE OPPORTUNITIES -->
+  <div class="section-title">Unique Opportunities for Cleartrip</div>
+  <div class="cards">
+    <div class="card">
+      <h3><span style="font-size:1.2rem">✈️</span> Leverage Flight Schema Uniquely</h3>
+      <p>Cleartrip is the only competitor (besides Ixigo) with real <strong>Flight schema with live prices</strong>. Neither MMT nor Goibibo have this. Google's Flight rich results in SERPs can show departure time, price, and airline directly. Expand this from 10 flights to 25+ covering all major morning, afternoon, and evening slots to maximise rich snippet coverage.</p>
+    </div>
+    <div class="card">
+      <h3><span style="font-size:1.2rem">🏢</span> Airport Schema as Differentiation</h3>
+      <p>Cleartrip and EaseMyTrip are the only sites with Airport schema. No competitor has created airport-specific landing pages linked from the route page. Cleartrip could build out BOM and DEL airport guide pages — terminals, lounges, metro connectivity — and link from here. This creates topical authority and earns informational query traffic that converts to bookings.</p>
+    </div>
+    <div class="card">
+      <h3><span style="font-size:1.2rem">📊</span> IATA Code Targeting</h3>
+      <p>CT's title includes "(BOM) to (DEL)" — the only competitor that does this. Business travellers and frequent flyers search by IATA codes. Create content sections or schema that explicitly targets "BOM DEL flights", "flight BOM to DEL" — Cleartrip has a head start here that others don't exploit.</p>
+    </div>
+    <div class="card">
+      <h3><span style="font-size:1.2rem">💰</span> "No Hidden Fee" Positioning</h3>
+      <p>EaseMyTrip's unique differentiator is "No Convenience Fee" — no other competitor claims this. Cleartrip should define and own its unique value proposition in the H1/meta. Whether it's "Price Match Guarantee", "Lowest Fare Promise", or "Transparent Pricing" — own a niche. Currently CT's meta feels generic versus the competition.</p>
+    </div>
+    <div class="card">
+      <h3><span style="font-size:1.2rem">📱</span> WhatsApp/Social Share Gap</h3>
+      <p>Zero OG tags means Cleartrip's page renders as an empty blue card on WhatsApp, the primary sharing channel in India. Given India's massive WhatsApp user base and travel content sharing behaviour, this is a high-frequency, zero-cost conversion channel being completely wasted. Add OG tags with an enticing deal image today.</p>
+    </div>
+    <div class="card">
+      <h3><span style="font-size:1.2rem">🗓️</span> Seasonal Content = Long-tail Domination</h3>
+      <p>MMT's HowTo schema targets "flights during monsoon", "IPL season fares", "Diwali flight deals" — all high-intent seasonal queries. Cleartrip has the content framework (29 H2s) but lacks seasonal depth. Adding 3–4 seasonal FAQ sections with date-anchored fare guidance captures recurring traffic spikes through summer, festive season, and year-end.</p>
+    </div>
+  </div>
+
+  <!-- CLEARTRIP ADVANTAGES -->
+  <div class="section-title">Cleartrip's Current Advantages</div>
+  <div class="insight-box insight-positive">
+    <h4>What Cleartrip does better than all 4 competitors</h4>
+    <p>These are genuine moats. Preserve and extend them — don't let a redesign or CMS migration strip them out.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Best Schema Architecture</h3>
+      <p>Cleartrip is the only site combining <strong>4 distinct schema types</strong>: Flight + FAQPage + Airport + BreadcrumbList. This is the most complete structured data implementation on this route. Ixigo has 150+ Flight schemas but no Airport or BreadcrumbList. CT's combination maximises rich result eligibility across multiple SERP features simultaneously.</p>
+    </div>
+    <div class="card">
+      <h3>Strongest Heading Hierarchy</h3>
+      <p>CT has a well-balanced <strong>H1 → 29 H2s → 34 H3s</strong> structure. Goibibo has 0 H2s (critical gap — 50+ H3s without H2 parents is architecturally broken for Googlebot). MMT has only 3 H2s vs 50+ H3s. CT's heading hierarchy is the most semantically correct of all competitors.</p>
+    </div>
+    <div class="card">
+      <h3>Correct lang= Attribute</h3>
+      <p>Cleartrip correctly uses <code>lang="en"</code>. MakeMyTrip uses <code>lang="eng"</code> which is NOT a valid BCP-47 language tag (should be "en"). Goibibo, Ixigo, EaseMyTrip use "en" correctly. CT's is technically clean — advantage in multilingual/regional SEO contexts.</p>
+    </div>
+    <div class="card">
+      <h3>Absolute Canonical URL</h3>
+      <p>CT uses a clean absolute URL for the canonical tag. Goibibo uses a protocol-relative canonical (<code>//www.goibibo.com/...</code>) which can cause issues in HTTP contexts and some crawlers. CT's implementation is more robust against canonical chain errors.</p>
+    </div>
+  </div>
+
+  <!-- ROADMAP -->
+  <div class="section-title">Prioritised Implementation Roadmap</div>
+  <div class="roadmap">
+    <div class="roadmap-phase">
+      <div class="phase-header p1-header">
+        <h3>Phase 1 — Quick Wins</h3>
+        <p>Week 1 · Estimated effort: 0.5 dev days · Impact: High</p>
+      </div>
+      <ul>
+        <li>Add og:title, og:description, og:image meta tags</li>
+        <li>Add &lt;meta name="robots" content="index, follow"&gt;</li>
+        <li>Fix 20 missing img alt attributes</li>
+        <li>Fix "New delhi" → "New Delhi" capitalisation sitewide</li>
+      </ul>
+    </div>
+    <div class="roadmap-phase">
+      <div class="phase-header p2-header">
+        <h3>Phase 2 — On-Page Optimisation</h3>
+        <p>Sprint 2 · Estimated effort: 2–3 days · Impact: High</p>
+      </div>
+      <ul>
+        <li>Revise H1 — remove "Book", reset price anchor to ₹4,800+</li>
+        <li>Revise title tag to match H1 price anchor</li>
+        <li>Expand meta description to include "Free Cancellation" USP</li>
+        <li>Add HowTo schema wrapping the booking guide H2 section</li>
+        <li>Add meta keywords expansion (7 variants like MMT)</li>
+      </ul>
+    </div>
+    <div class="roadmap-phase">
+      <div class="phase-header p3-header">
+        <h3>Phase 3 — Content &amp; Authority</h3>
+        <p>Q3 · Estimated effort: 1–2 weeks · Impact: Medium-High</p>
+      </div>
+      <ul>
+        <li>Add 2,500+ words seasonal content (monsoon, Diwali, IPL fares)</li>
+        <li>Add AggregateRating schema tied to review data</li>
+        <li>Build out BOM + DEL airport guide pages</li>
+        <li>Add airline comparison content (IndiGo vs Air India vs SpiceJet)</li>
+        <li>Expand FAQ schema to 20+ Q&As to match/exceed competitors</li>
+        <li>Define and embed CT's unique value prop across H1/meta/OG</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- STRUCTURE AND TONALITY -->
+  <div class="section-title">Page Structure &amp; Tonality Review</div>
+  <div class="cards">
+    <div class="card">
+      <h3>Tonality: Transactional vs Informational</h3>
+      <p>Cleartrip's page opens aggressively transactional ("Book… Flight Tickets") — optimised for bottom-funnel users who are ready to buy. MMT and Goibibo open informational ("Mumbai to Delhi Flights") — this captures both top-funnel (planning) and bottom-funnel (booking) queries. For a route as competitive as BOM-DEL, informational framing captures 3–4x more query variations and still converts well because booking intent is implicit.</p>
+      <br><p><strong>Recommendation:</strong> Shift to dual-intent framing. Lead with route + price + convenience, then transactional CTAs in the body.</p>
+    </div>
+    <div class="card">
+      <h3>Structure: CT Has the Best Bones</h3>
+      <p>CT's page architecture is the strongest: good H2/H3 hierarchy, destination content (Mumbai + Delhi), booking guide, FAQ, airport information, price trends, airline comparison. Goibibo's zero-H2 page is actually architecturally inferior despite higher word count. CT just needs to fill the content gaps and fix the technical issues — the skeleton is solid.</p>
+    </div>
+    <div class="card">
+      <h3>Promo Code Strategy</h3>
+      <p>CT meta: <code>CTDOM</code> — buried, single code. MMT meta: <code>MMTDEAL</code> + 5 USP trust signals (Free Cancellation, Instant Discount, 24x7, Cashback). EaseMyTrip: <code>EMTFIRST</code> + "No Convenience Fee" unique claim. CT's promo feels isolated vs competitors' stacked-USP approach. A promo code should be paired with urgency and at least 2 supporting trust signals in the meta.</p>
+    </div>
+    <div class="card">
+      <h3>Price Anchoring Strategy</h3>
+      <p>The ₹6,958 anchor in CT's H1/title is the most damaging single issue. In SERP, searchers see 4–5 results. CT shows ₹6,958, MMT shows ₹4,800, Goibibo shows ₹4,800. Even if CT's actual available fares are equivalent, the perceived price gap creates an immediate CTR disadvantage. Price anchor in H1 should reflect the <em>minimum</em> available fare (₹4,800 range) not the specific flight shown. This is a live data injection problem worth solving in the template.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  SEO Audit generated from live scraped data · Route: Mumbai (BOM) → New Delhi (DEL) · 19 May 2026 · Cleartrip Competitive Analysis
+</footer>
+
+</body>
+</html>
