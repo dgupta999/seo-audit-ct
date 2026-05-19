@@ -1,5 +1,12 @@
 {
+  "name": "seo-audit-ct",
+  "version": "1.0.0",
+  "description": "SEO audit scraper for Cleartrip competitor analysis",
+  "scripts": {
+    "scrape": "node scrape.js"
+  },
   "dependencies": {
     "playwright": "^1.60.0"
   }
 }
+
