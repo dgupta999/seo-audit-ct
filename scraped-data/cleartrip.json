@@ -1,0 +1,820 @@
+{
+  "name": "cleartrip",
+  "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+  "scrapedAt": "2026-05-19T19:11:27.153Z",
+  "seo": {
+    "title": "Mumbai (BOM) to New Delhi (DEL) Flights, Airfares @₹6958 + 25% Off | Cleartrip",
+    "h1": [
+      "Book Mumbai to New Delhi Flight Tickets, Fares @₹6958 + 25% Off"
+    ],
+    "h2": [
+      "Flights from Mumbai to New Delhi",
+      "No flights to show based on the last filters",
+      "Easily Find Cheap Flights from Mumbai to New delhi",
+      "Book Cheapest Flight from Mumbai to New delhi on Cleartrip",
+      "Book Mumbai to New delhi Flight Tickets on Cleartrip",
+      "Mumbai to New delhi Flights Ticket Price and Booking Trends",
+      "Current Mumbai to New delhi Flight Price Snapshot",
+      "Should I Book One-Way or Round Trip for Mumbai to New delhi Flights?",
+      "Which Airlines Should I Consider When Booking Mumbai to New delhi Flights?",
+      "How to Book a Mumbai to New delhi Flight Ticket on Cleartrip?",
+      "Checking BOM To DEL Flight Status and Schedule on Cleartrip",
+      "How To Web Check-in for Your Upcoming Mumbai to New delhi Flight?",
+      "Why Book Your Mumbai to New delhi Flight on Cleartrip?",
+      "Unlock Unbeatable Savings on Your Mumbai to New delhi Flight",
+      "About Mumbai",
+      "Best Time to Visit Mumbai",
+      "Places to Visit in Mumbai",
+      "Travelling in and Around Mumbai",
+      "Why Visit Mumbai",
+      "Mumbai Airport Information",
+      "About New Delhi",
+      "Best Time to Visit New Delhi",
+      "Places to Visit in New Delhi",
+      "Travelling in and Around New Delhi",
+      "Why Visit New Delhi",
+      "New Delhi Airport Information",
+      "Frequently Asked Questions | Mumbai to New delhi Flights",
+      "Airport Details",
+      "Popular Flights from Mumbai (BOM)",
+      "Browse More Flights to New delhi (DEL)"
+    ],
+    "h3": [
+      "CHEAP FLIGHTS FROM MUMBAI (BOM)",
+      "CHEAP FLIGHTS FROM NEW DELHI (DEL)",
+      "CHEAP FLIGHTS TO NEW DELHI (DEL)",
+      "TOP INTERNATIONAL FLIGHTS FROM MUMBAI (BOM)",
+      "TOP INTERNATIONAL FLIGHTS FROM NEW DELHI (DEL)",
+      "BOOK AIRLINE TICKETS",
+      "FLIGHTS FROM NEARBY CITIES",
+      "FLIGHTS TO NEARBY CITIES",
+      "POPULAR DOMESTIC ROUTES",
+      "FLY FROM INDIA TO TOP GLOBAL DESTINATIONS",
+      "POPULAR HOTELS IN NEW DELHI",
+      "All Coupons",
+      "Find the Lowest airfare from Mumbai to New delhi",
+      "Mumbai to New delhi Flight Distance, Duration and Time",
+      "Mumbai to New delhi Flight Schedule and Timing",
+      "Cheapest Mumbai to New delhi Flight Booking on Cleartrip",
+      "What is Today's Lowest Airfare from Mumbai to New delhi?",
+      "When is the Best Time to Book Cheap Mumbai to New delhi Flights?",
+      "Morning vs Late Night Mumbai to New delhi Flight Charges: Which is Cheaper?",
+      "Most Popular Airlines",
+      "Direct Flight Options",
+      "Connecting Flights Between Mumbai and New delhi",
+      "Budget-Friendly Flights",
+      "How much does a Mumbai to New delhi flight typically cost?",
+      "Are there any travel hacks for booking flights from Mumbai to New delhi?",
+      "How do I ensure a smooth travel experience on this route?",
+      "What are the advantages of booking through Cleartrip?",
+      "How much baggage can I carry on my Mumbai to New delhi flight?",
+      "What are the most preferred airlines from Mumbai to New delhi?",
+      "How can I cancel my flight ticket from Mumbai to New delhi?",
+      "Can I reschedule my Mumbai to New delhi flight after booking?",
+      "What documents do I need to carry for this flight?",
+      "Can I modify my travel dates after booking?",
+      "Mumbai",
+      "New Delhi"
+    ],
+    "metaDescription": "Book Mumbai (BOM) to New Delhi (DEL) flight tickets at lowest airfares on Cleartrip. Use code 'CTDOM' for up to 25% discounts on Mumbai to New delhi flight booking. ✅ 24x7 Support",
+    "metaKeywords": "Mumbai to Delhi flights\n Delhi flights \n flights from Mumbai",
+    "canonical": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImage": null,
+    "robots": null,
+    "lang": "en",
+    "structuredData": [
+      {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.cleartrip.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Flights",
+            "item": "https://www.cleartrip.com/flights"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Domestic flight schedules",
+            "item": "https://www.cleartrip.com/flight-schedule/flight-schedules-domestic.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Flights from Mumbai",
+            "item": "https://www.cleartrip.com/flight-schedule/flights-from-mumbai.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Mumbai to New delhi Flights"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E5201",
+        "name": "IndiGo 6E-5201 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-5201 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT6H10M",
+        "departureTime": "2026-06-03T14:55:00+05:30",
+        "arrivalTime": "2026-06-03T21:05:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "6958.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E2237",
+        "name": "IndiGo 6E-2237 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-2237 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT4H50M",
+        "departureTime": "2026-06-03T18:40:00+05:30",
+        "arrivalTime": "2026-06-03T23:30:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "6958.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E911",
+        "name": "IndiGo 6E-911 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-911 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT6H25M",
+        "departureTime": "2026-06-03T01:30:00+05:30",
+        "arrivalTime": "2026-06-03T07:55:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "6958.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E911",
+        "name": "IndiGo 6E-911 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-911 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT5H15M",
+        "departureTime": "2026-06-03T01:30:00+05:30",
+        "arrivalTime": "2026-06-03T06:45:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "6958.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E5144",
+        "name": "IndiGo 6E-5144 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-5144 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT5H25M",
+        "departureTime": "2026-06-03T06:10:00+05:30",
+        "arrivalTime": "2026-06-03T11:35:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "6958.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E5107",
+        "name": "IndiGo 6E-5107 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-5107 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT6H",
+        "departureTime": "2026-06-03T20:00:00+05:30",
+        "arrivalTime": "2026-06-04T02:00:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "7171.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E5177",
+        "name": "IndiGo 6E-5177 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-5177 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT5H15M",
+        "departureTime": "2026-06-03T19:10:00+05:30",
+        "arrivalTime": "2026-06-04T00:25:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "7352.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E5131",
+        "name": "IndiGo 6E-5131 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-5131 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT6H25M",
+        "departureTime": "2026-06-03T15:50:00+05:30",
+        "arrivalTime": "2026-06-03T22:15:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "7389.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "6E632",
+        "name": "IndiGo 6E-632 Mumbai to New Delhi",
+        "description": "IndiGo flight 6E-632 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT5H15M",
+        "departureTime": "2026-06-03T04:00:00+05:30",
+        "arrivalTime": "2026-06-03T09:15:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "IndiGo",
+          "iataCode": "6E"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "7607.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Flight",
+        "flightNumber": "SG164",
+        "name": "SpiceJet SG-164 Mumbai to New Delhi",
+        "description": "SpiceJet flight SG-164 from Chatrapati Shivaji Airport (BOM) to Indira Gandhi Airport (DEL)",
+        "estimatedFlightDuration": "PT2H10M",
+        "departureTime": "2026-06-03T23:35:00+05:30",
+        "arrivalTime": "2026-06-04T01:45:00+05:30",
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "Chatrapati Shivaji Airport",
+          "iataCode": "BOM",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "India"
+          }
+        },
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "Indira Gandhi Airport",
+          "iataCode": "DEL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New Delhi",
+            "addressCountry": "India"
+          }
+        },
+        "provider": {
+          "@type": "Airline",
+          "name": "SpiceJet",
+          "iataCode": "SG"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "7793.0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cleartrip.com/flight-schedule/mumbai-new-delhi-flights.html",
+          "seller": {
+            "@type": "Organization",
+            "name": "Cleartrip",
+            "url": "https://www.cleartrip.com/",
+            "sameAs": [
+              "https://twitter.com/cleartrip",
+              "https://www.facebook.com/cleartrip",
+              "https://www.instagram.com/cleartrip",
+              "https://www.linkedin.com/company/cleartrip"
+            ]
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a Mumbai to New delhi flight typically cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Average airfare runs around Rs.6958 to Rs.34959 depending on booking timing and travel season."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are there any travel hacks for booking flights from Mumbai to New delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, here are some useful tips to consider: Use incognito mode when searching to avoid price hikes based on cookies Book during off-peak hours, typically late at night or early morning Check round-trip fares as they can sometimes be cheaper than two one-way tickets"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I ensure a smooth travel experience on this route?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Book in advance, especially during peak seasons Arrive at the airport early to avoid last-minute rush Check the airline's baggage policy to avoid extra charges Stay updated on flight status via Cleartrip's app or website"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the advantages of booking through Cleartrip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "User-friendly interface with easy navigation and a simple booking process Exclusive deals with access to special offers and discounts Fare alerts to monitor price changes for your desired route"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much baggage can I carry on my Mumbai to New delhi flight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Baggage allowance varies by airline. Generally, economy class passengers can carry up to 7 kg of hand baggage and 15 kg of check-in luggage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the most preferred airlines from Mumbai to New delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Air India Express, IndiGo, SpiceJet are the most preferred airlines on this route, known for reliable service, frequent flights, and competitive fares."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I cancel my flight ticket from Mumbai to New delhi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To cancel, log in to your Cleartrip account and raise the cancellation request directly through the platform, as airlines do not handle cancellations for third-party bookings. Refunds are processed after deducting the airline's cancellation charge plus Cleartrip's processing fee of Rs.300 for domestic bookings. Please note that no-show tickets are not eligible for a refund."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I reschedule my Mumbai to New delhi flight after booking?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, most airlines allow rescheduling subject to fare difference and airline change fees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What documents do I need to carry for this flight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You must carry a valid physical copy of any one of the following: Voter ID card Aadhaar card PAN card Driver's license Government-issued student or disability ID card Passport"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I modify my travel dates after booking?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Date changes are possible through your Cleartrip account or customer service, subject to airline change fees and fare differences."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Airport",
+        "name": "Chhatrapati Shivaji Maharaj International Airport (CSMIA)",
+        "url": "https://www.cleartrip.com/flight-booking/mumbai-airport-bom.html",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mumbai International Airport Ltd 1st Floor Terminal 1 Santacruz East Mumbai Maharashtra 400099 India",
+          "addressLocality": "Mumbai"
+        },
+        "telephone": "+91 22 66851010 (24x7 Helpline)"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Airport",
+        "name": "Indira Gandhi International Airport (DEL)",
+        "url": "https://www.cleartrip.com/flight-booking/delhi-airport-del.html",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "New Delhi International Airport Ltd IGI Airport Aerocity New Delhi 110037 India",
+          "addressLocality": "New Delhi"
+        },
+        "telephone": "0124-4797300 or 0124-6838410"
+      }
+    ],
+    "internalLinks": [
+      "https://www.cleartrip.com/",
+      "/flights",
+      "/hotels",
+      "/bus",
+      "https://www.cleartrip.com/offers/india/domestic-flights",
+      "https://www.cleartrip.com/flight-schedule/mumbai-goa-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-bangalore-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-kolkata-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-varanasi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-ahmedabad-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-jaipur-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-lucknow-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-chennai-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-chandigarh-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-prayagraj-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-bangalore-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-mumbai-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-kolkata-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-goa-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-patna-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-hyderabad-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-ahmedabad-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-bhubaneswar-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-guwahati-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-prayagraj-flights.html",
+      "https://www.cleartrip.com/flight-schedule/bangalore-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/kolkata-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/hyderabad-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/chennai-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/patna-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/pune-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/ahmedabad-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/bhubaneswar-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/ranchi-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/guwahati-new-delhi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-dubai-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-london-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-singapore-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-bangkok-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-phuket-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-new-york-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-abu-dhabi-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-kathmandu-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-jeddah-flights.html",
+      "https://www.cleartrip.com/flight-schedule/mumbai-hong-kong-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-dubai-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-london-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-new-york-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-bangkok-flights.html",
+      "https://www.cleartrip.com/flight-schedule/new-delhi-singapore-flights.html"
+    ],
+    "imgAltMissing": 20,
+    "totalImages": 80,
+    "wordCount": 4928
+  }
+}
